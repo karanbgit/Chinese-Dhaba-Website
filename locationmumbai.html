@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="icon" type="image/x-icon" href="images/fevikon.png"></link>
+
+<title>Chinese Dhaba</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="styleSheet" href="locationmumbai.css">
+
+</head>
+<body>
+<div class="container">
+	<div class="navbar">
+		<nav>	
+				<div  class="navimage">
+					<a href="home.html"><img src="logo.png" alt="Navigation imge" ></a>
+				</div>
+			<ul>
+				<li><a href="homemenu.html">MENU<a/></li>
+				<li><a href="catersdirectfromus.html">CATERING</a></li>
+				<li><a href="locationkolhapur.html">LOCATION</a></li>
+				<li><a href="franchise.html">FRANCHISE</a></li>
+
+
+				<div class="dropdown">
+			  		<button class="dropbtn" onclick="myFunction()">ORDER
+   				 		<i class="fa fa-caret-down"></i>
+  					</button>
+					<div class="dropdown-content" id="myDropdown">
+    						<a href="delivaryorder.html">Delivary</a>
+    						<a href="pickuporder.html">Pickup</a>
+   						<a href="cateringorder.html" target="_blank">Catering</a>
+  					</div>
+				</div>
+
+			</ul>
+
+
+		</nav>
+		
+	</div>
+
+		
+	<div class="newcontainer">
+		<div class="menu">
+			<h1>LOCATIONS</h1>
+		<a href="locationkolhapur.html"><button>KOLHAPUR - PATEL PLAZA</button></a>
+		<a href="locationpune.html"><button>PUNE - GLOBAL MALL</button></a>
+		<a href="locationmumbai.html"><button id="mumbai">MUMBAI - NEAR DMART</button></a>
+		<a href="locationbangalore.html"><button>BANGALORE - BRECKINRIDGE BLVD.</button></a>
+		</div>
+		<div class="location">
+			<div class="mumbai">
+				<h1>MUMBAI - NEAR DMART</h1>
+				<h2>ADDRESS:</h2>
+				<a href="https://maps.app.goo.gl/gfzrLgrXRv9Xty797" target="_blank">3495 Peachtree Parkway Suite 113 Suwanee, Georgia 30024</a>
+				<h2>HOURS:</h2>
+				<p>Mon: CLOSED</p><p>Tue-Sun: 11:00 A.M. - 9:00 P.M.</p><p>(LAST DINE-IN ORDER 30 MINUTES BEFORE CLOSING)</p>
+				<h2>PHONE:</h2>
+				<p>8523697415</p>
+				<h2>EMAIL:</h2>
+				<p>mumbai@chinesedhaba.com</p>
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3304.7000934511284!2d-84.1645319!3d34.0772015!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f59915c921877b%3A0xd49dbca83f67c034!2sChinese%20Dhaba!5e0!3m2!1sen!2sin!4v1721731319421!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+			</div>
+		</div><br>
+		<div class="expand">
+			<p>Let us know where we should expand to next</p>
+		</div>
+	</div>
+
+		<div class="location-form">
+			<form>
+				<input type="text" id="name" name="name" placeholder="Name..." required><br><br>
+
+				<input type="email" id="email" name="email" placeholder="Email Address..." required><br><br>
+
+				<input type="text" id="number" name="number" placeholder="Phone Number..." required><br><br>
+
+				<input type="text" id="message" name="message" placeholder="Message..." required><br><br>
+
+				<input type="submit" value="Submit">
+
+			</form>
+
+		</div>
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+</body>
+
+</html>

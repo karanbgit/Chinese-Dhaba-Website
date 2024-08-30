@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="icon" type="image/x-icon" href="images/fevikon.png"></link>
+
+<title>Chinese Dhaba</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="styleSheet" href="franchise.css">
+
+</head>
+<body>
+<div class="container">
+	<div class="navbar">
+		<nav>	
+				<div  class="navimage">
+					<a href="home.html"><img src="logo.png" alt="Navigation imge" ></a>
+				</div>
+			<ul>
+				<li><a href="homemenu.html">MENU<a/></li>
+				<li><a href="catersdirectfromus.html">CATERING</a></li>
+				<li><a href="locationkolhapur.html">LOCATION</a></li>
+				<li><a href="franchise.html">FRANCHISE</a></li>
+
+
+				<div class="dropdown">
+			  		<button class="dropbtn" onclick="myFunction()">ORDER
+   				 		<i class="fa fa-caret-down"></i>
+  					</button>
+					<div class="dropdown-content" id="myDropdown">
+    						<a href="delivaryorder.html">Delivary</a>
+    						<a href="pickuporder.html">Pickup</a>
+   						<a href="cateringorder.html" target="_blank">Catering</a>
+  					</div>
+				</div>
+
+			</ul>
+
+		</nav>
+		
+	</div>
+
+		
+	<div class="newcontainer">
+	<div class="menu">
+		<h1>FRANCHISE</h1>
+	</div>
+	<div class="franchise">	
+		<div class="franchise-form">
+			<form>	
+				<input type="text" id="fname" name="fname" placeholder="First Name..." required><br><br>
+
+				<input type="text" id="lname" name="lname" placeholder="Last Name..." required><br><br>
+
+				<input type="email" id="email" name="email" placeholder="Email Address..." required><br><br>
+
+				<input type="text" id="number" name="number" placeholder="Phone Number..." required><br><br>
+
+				<input type="text" id="address" name="address" placeholder="Address..." required><br><br>
+
+				<input type="text" id="addressline" name="addressline" placeholder="Address Line..." required><br><br>
+
+				<input type="text" id="city" name="city" placeholder="City..." required><br><br>
+
+				<input type="text" id="state" name="state" placeholder="State..." required><br><br>
+
+				<input type="text" id="code" name="code" placeholder="Zip Code..." required><br><br>
+
+				<input type="text" id="question" name="question" placeholder="Franchise Questions..." required><br><br>
+
+				<label>Do you have access to funds needed to franchise ?</label><br><br>
+
+				<input type="radio" id="yes" name="funds" value="yes">
+				<label for="yes">Yes</label><br><br>
+
+				<input type="radio" id="no" name="funds" value="no">				
+				<label for="no">No</label><br><br>
+
+				<label>Do you plan to operate the business yourself ?</label><br><br>
+
+				<input type="radio" id="yes" name="operate" value="yes">
+				<label for="yes">Yes</label><br><br>
+
+				<input type="radio" id="no" name="operate" value="no">				
+				<label for="no">No</label><br><br>
+				
+				<label for="date">Plan Date to Open</label><br><br>
+			 	<input type="date" id="open" name="open" required><br><br>
+
+				<input type="textarea" id="describe" name="describe" placeholder="Describe Why you feel Chinese Dhaba is Right for you..." required><br><br>
+
+				<input type="submit" value="Submit">
+
+			</form>
+		</div>
+	</div>
+
+
+</div>
+</div>
+
+<script>
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+</body>
+
+</html>

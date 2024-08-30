@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="icon" type="image/x-icon" href="images/fevikon2.png"></link>
+
+	<title>Catering</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="styleSheet" href="cateringorder.css">
+
+</head>
+<body>
+<div class="container">
+	<div class="topnav">
+		<div class="navbar">
+			<div  class="navimage">
+				<img src="logo.png" alt="Navigation imge" >
+			</div>
+		</div>
+
+		<div class="back">
+			<b><a href="homemenu.html"><i class="fa-solid fa-angle-left"></i> Back</a></b>
+		</div>
+	</div>
+
+	<div class="subcontainer">
+		<div class="catering">
+			<div class="head">
+				<div class="heading">
+					<h1>Order from Catering</h1>
+					<b><p>Please specify a preferred location in the description field.</p></b>
+				</div>
+			</div>
+			<div class="menus">
+				<div class="cateringimages">	
+					<div class="image">
+						<div class="item1">
+							<img src="images/cateringorder1.jpeg" alt="Catering image">
+						</div>
+						<div class="item2">
+							<img src="images/cateringorder2.jpeg" alt="Catering image">
+						</div>
+					</div>
+					<div class="image">
+						<div class="item1">
+							<img src="images/cateringorder3.jpeg" alt="Catering image">
+						</div>
+						<div class="item2">
+							<img src="images/cateringorder4.jpeg" alt="Catering image">
+						</div>
+					</div>
+				</div>
+				
+				<div class="cateringform">
+					<div class="contents">
+					<form>
+						<label for="name">Full Name (required):</label><br><br>
+						<input type="text" id="name" placeholder="e.g.Virat Kohali" required><br><br>
+
+						<label for="number">Phone (required):</label><br><br>
+						<input type="text" id="number" placeholder="e.g.9889887474" required><br><br>
+
+						<input type="checkbox" id="terms" name="terms" required>
+						<label for="terms" id="privacy">I'd like to get texts about specials, events, and other exclusive offers and announcements not available to the general public. <a href="privacypolicy.html" target="_blank">Privacy Policy</a> <a href="termsandconditions.html" target="_blank">Terms and Conditions.</a></label><br><br>
+  							<li>Message and data rates may apply.</li>
+  							<li>Message frequency varies.</li><br>
+						<label for="email">Email (required):</label><br><br>
+						<input type="email" id="email" placeholder="e.g.example@gmail.com" required><br><br>
+					
+						<label for="people">Number of People (required):</label><br><br>
+  						<select>
+    							<option value="please Select One">Please Select One...</option>
+    							<option value="5 People">5 People</option>
+    							<option value="10 People">10 people</option>
+    							<option value="15 People">15 People</option>
+    							<option value="20 People">20 people</option>
+    							<option value="25 People">25 People</option>
+    							<option value="30 People">30 people</option>
+    							<option value="35 People">35 People</option>
+    							<option value="40 People">40 people</option>
+    							<option value="45 People">45 People</option>
+    							<option value="50 People">50 people</option>
+    							<option value="60 People">60 People</option>
+    							<option value="70 People">70 people</option>
+    							<option value="80 People">80 People</option>
+    							<option value="90 People">90 people</option>
+    							<option value="100 People">100 People</option>
+    							<option value="150 People">150 people</option>
+    							<option value="200 People">200 People</option>
+    							<option value="250 People">250 people</option>
+    							<option value="300 People">300 People</option>
+    							<option value="400 People">400 people</option>
+    							<option value="500 People">500 people</option>
+  						</select><br><br>
+
+						<label for="date">Select Date (required):</label><br><br>
+						<input type="date" id="date" required><br><br>
+
+						<label for="date">Select Time (required):</label><br><br>
+						<input type="time" id="time" required><br><br>
+
+						<label for="occasion">Select Occasion (required):</label><br><br>
+  						<select name="people" id="people">
+    							<option value="Please Select One">Please Select One...</option>
+    							<option value="Anniversary">Anniversary</option>
+    							<option value="Birthday">Birthday</option>
+    							<option value="Bridal Shower">Bridal Shower</option>
+    							<option value="Family Reunion">Family Reunion</option>
+    							<option value="Graduation">Graduation</option>
+    							<option value="Rehearsal Dinner">Rehearsal Dinner</option>
+    							<option value="Retirement">Retirement</option>
+    							<option value="Wedding">Wedding </option>
+    							<option value="Holiday Party">Holiday Party</option>
+  						</select><br><br>
+
+						<label for="service">Select Type Of Catering Service (required):</label><br><br>
+  						<select name="service" id="service">
+    							<option value="Please Select One">Please Select One...</option>
+    							<option value="Pick-Up">Pick-Up</option>
+    							<option value="Delivery">Delivery </option>
+  						</select><br><br>
+
+						<label for="address">Address (required):</label><br><br>
+						<input type="text" id="address" placeholder="address..." required><br><br>
+
+						<label for="budget">Budget per Person:</label><br><br>
+						<input type="text" id="budget" name="budget" value="70 RS" disabled ><br><br>
+
+						<label for="description">Description / Requests (optional):</label><br><br>
+  						<textarea rows="5" cols="33" >Any Special Request..? </textarea>
+
+
+						<input type="submit" value="Submit">
+
+					</form>
+					</div> <!--Contents Div Closed-->
+				
+				</div> <!--cateringform div closed-->
+		
+			</div> <!--menus div closed-->
+
+			<div class="footer">
+				<b><p>Catering powered by</p></b>
+				<img src="images/footercater.png" alt="Footer Image">
+			</div>
+		
+		</div> <!--catering div closed-->
+	
+	</div> <!--subcontainer div closed-->
+
+
+
+
+
+</div> <!--container div closed-->
+
+
+
+</body>
+</html>

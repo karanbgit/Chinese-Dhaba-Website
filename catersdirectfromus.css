@@ -1,0 +1,194 @@
+body {
+  	margin: 0;
+	padding:0;
+  	font-family: Arial, Helvetica, sans-serif;
+	background-image:url('images/Slide1.JPG');
+	background-repeat:no-repeat;
+	background-size:cover;	
+	background-attachment:fixed;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/*Navigation CSS start*/
+.navbar .navimage img{
+	height:70px;
+	width:auto;
+	align-item:center;
+	float:left;
+	justify-content:left;	
+	filter:drop-shadow(5px 5px 2px white);
+}
+nav{
+	text-align:center;
+	font-size:20px;
+  	overflow: hidden;
+	background-color:#333;
+}
+nav ul{
+	list-style-type:none;
+	float:right;
+}
+nav ul li {
+	margin:10px;
+	display: inline;
+	font-size: 20px;
+	font-family: 'Brush Script MT', cursive;
+}
+nav ul li a{
+	text-decoration:none;
+	color:#fff;
+}
+
+nav ul li a:hover{
+	background-color:#fff;
+	color:#333;
+}
+
+.navbar{
+	position:sticky;
+	top:0;
+	z-index:1;
+}
+
+nav ul button{
+	margin: 0 10px ;
+	font-family: 'Brush Script MT', cursive;
+	background-color:#333;
+	color:#fff;
+}
+
+.dropdown {
+	float:right;
+}
+
+.dropdown .dropbtn {
+  	cursor: pointer;
+  	font-size: 16px;  
+  	border: none;
+  	outline: none;
+  	color: white;
+	padding-right:30px;
+	font-size: 20px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+	background-color:#fff;
+	color:#333;
+}
+
+.dropdown-content {
+  	display: none;
+  	position: absolute;
+  	background-color: #f9f9f9;
+  	z-index: 1;
+}
+
+.dropdown-content a {
+  	float: none;
+  	color: black;
+  	text-decoration: none;
+  	display: block;
+  	text-align: left;	
+	padding:10px;
+  	background-color: #333;
+	color:white;
+	font-family: 'Brush Script MT', cursive;
+}
+
+.dropdown-content a:hover {
+	  background-color: #ddd;	
+}
+
+.show {
+  display: block;
+}
+
+/*Navigation CSS END*/
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/* MENU Buttons  CSS*/ 
+.menu{
+	text-align:center;
+}
+.menu h1{
+	font-family: 'Brush Script MT', cursive;
+	font-size:40px;
+}
+.menu button{
+  	font-family: 'Trebuchet MS', sans-serif;
+	padding:10px 30px;
+	background-color:#333;
+	color:#FFC300;
+	border:0;
+	margin-top:10px;
+	margin:0 10px;
+	text-align:center;
+}
+
+/* MENU Buttons CSS*/ 
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/* MENU CARDS CSS START*/ 
+.newcontainer{
+	display:flex;
+	flex-wrap:wrap;
+	margin:0 50px;
+	padding:20px;
+	justify-content:center;
+}
+.card table{
+	float:right;	
+}
+.card{
+	border:2px solid black;
+	width:37%;
+	background-color:white;
+	border-radius:10px;
+	margin:6px 17px;
+	padding:0 30px;
+}
+.card h2{
+	text-align:center;
+	font-family: 'Brush Script MT', cursive;
+}
+.card h4{
+	text-align:center;
+}
+.image{
+	border-radius:10px;
+	margin-top:15px;	
+}
+
+.newcontainer .card .price{
+	margin:8px 0;
+}
+/* MENU CARDS CSS END*/ 
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

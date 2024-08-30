@@ -1,0 +1,108 @@
+body {
+  	margin: 0;
+	padding:0;
+  	font-family: Arial, Helvetica, sans-serif;
+  	margin-bottom: 70px;
+
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/*Navigation CSS start*/
+.navbar{
+	display:flex;
+	justify-content:center;
+	position:relative;
+	align-items:center;
+}
+
+.navimage img{
+	height:85px;	
+	width:auto;
+	filter:drop-shadow(-1px 1px 1px #999696);
+}
+.privacy{
+	margin:20px 100px;
+}
+
+.contents{
+	margin:10px 40px;
+}
+.contents p{
+	line-height:1.4;
+	text-align:justify;
+}
+.fa-user-shield{
+	font-size:23px;
+	padding-right:15px;
+}
+.fa-circle-info{
+	font-size:25px;
+	padding-right:15px;
+}
+.fa-location-dot{
+	font-size:25px;
+	padding-right:15px;
+}
+.fa-signal{
+	font-size:25px;
+	padding-right:15px;
+}
+.fa-file{
+	font-size:25px;
+	padding-right:15px;
+}
+.fa-share{
+	font-size:25px;
+	padding-right:15px;
+}
+.fa-square-check{
+	font-size:25px;
+	padding-right:15px;
+}
+.fa-accessible-icon{
+	font-size:25px;
+	padding-right:15px;
+}
+.fa-child-reaching{
+	font-size:25px;
+	padding-right:15px;
+}
+.fa-user-lock{
+	font-size:23px;
+	padding-right:15px;
+}
+
+.fa-arrows-to-circle{
+	font-size:22px;
+	padding-right:15px;
+}
+.fa-shield-halved{
+	font-size:25px;
+	padding-right:15px;
+}
+.fa-dice-d20{
+	font-size:25px;
+	padding-right:15px;
+}
+.fa-address-card{
+	font-size:25px;
+	padding-right:15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

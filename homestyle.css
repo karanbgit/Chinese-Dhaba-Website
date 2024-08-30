@@ -1,0 +1,485 @@
+body {
+  	margin: 0;
+	padding:0;
+  	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/*Navigation CSS start*/
+.navbar .navimage img{
+	height:70px;
+	width:auto;
+	align-item:center;
+	float:left;
+	justify-content:left;	
+	filter:drop-shadow(5px 5px 2px white);
+}
+nav{
+	text-align:center;
+	font-size:20px;
+  	overflow: hidden;
+	background-color:#333;
+}
+nav ul{
+	list-style-type:none;
+	float:right;
+}
+nav ul li {
+	margin:10px;
+	display: inline;
+	font-size: 20px;
+	font-family: 'Brush Script MT', cursive;
+}
+nav ul li a{
+	text-decoration:none;
+	color:#fff;
+}
+
+nav ul li a:hover{
+	background-color:#fff;
+	color:#333;
+}
+
+.navbar{
+	position:sticky;
+	top:0;
+	z-index:1;
+}
+
+nav ul button{
+	margin: 0 10px ;
+	font-family: 'Brush Script MT', cursive;
+	background-color:#333;
+	color:#fff;
+}
+
+.dropdown {
+	float:right;
+}
+
+.dropdown .dropbtn {
+  	cursor: pointer;
+  	font-size: 16px;  
+  	border: none;
+  	outline: none;
+  	color: white;
+	padding-right:30px;
+	font-size: 20px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+	background-color:#fff;
+	color:#333;
+}
+
+.dropdown-content {
+  	display: none;
+  	position: absolute;
+  	background-color: #f9f9f9;
+  	z-index: 1;
+}
+
+.dropdown-content a {
+  	float: none;
+  	color: black;
+  	text-decoration: none;
+  	display: block;
+  	text-align: left;	
+	padding:10px;
+  	background-color: #333;
+	color:white;
+	font-family: 'Brush Script MT', cursive;
+}
+
+.dropdown-content a:hover {
+	  background-color: #ddd;	
+}
+
+.show {
+  display: block;
+}
+
+
+/*Navigation CSS END*/
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/* About Section CSS  Start*/
+.aboutsection{
+	width:100%;
+}
+.about{
+	display:flex;
+}
+
+.aboutcontent{
+	width:50%;
+	text-align:center;
+  	line-height: 1.2;
+}
+.aboutimage{
+	width:50%;
+}
+.aboutimage img{
+	width:100%;
+}
+
+.aboutcontent_pad button{
+	padding:10px 30px;
+	background-color:#333;
+	color:#FFC300;
+	border:0;
+	margin-top:10px;
+}
+.aboutcontent_pad button:hover{
+	background-color:red;
+	color:white;
+	transform:scale(1.03);
+	cursor:pointer;
+	transition: all 0.2s ease;
+}
+
+/* About Section CSS  END */
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/* Menu Section CSS Start*/
+.ourmenu{
+	display:flex;
+	width:100%;
+}
+.menuimage{	
+		margin:0;
+
+	width:50%;
+}
+.menuimage img{
+	width:100%;
+	height:auto;
+}
+.menucontent{
+	width:50%;
+	padding:10px;
+	text-align:center;
+  	line-height: 1.2;
+}
+.menucontent_pad button{
+	padding:10px 30px;
+	background-color:#333;
+	color:#FFC300;
+	border:0;
+	margin-top:10px;
+}
+.menucontent_pad button:hover{
+	background-color:red;
+	color:white;
+	transform:scale(1.03);
+	cursor:pointer;
+	transition: all 0.2s ease;
+}
+/* Menu Section CSS END*/
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/* Slideshow container Start*/
+
+.slideshow-container {
+ 	max-width: 100%;
+ 	position: relative;
+  	margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  	cursor: pointer;
+  	position: absolute;
+  	top: 50%;
+  	width: auto;
+  	padding: 16px;
+  	margin-top: -22px;
+  	color: white;
+  	font-weight: bold;
+	font-size:20px;
+  	transition: 0.6s ease;
+  	border-radius: 0 3px 3px 0;
+  	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  	color: white;
+  	position: absolute;
+    	top: 35%;
+  	width: 100%;
+  	text-align: center;
+}
+.text h1{
+	font-size:50px;
+}
+.text h2{
+	font-size:30px;
+}
+.text button{
+	padding:10px 30px;
+	background-color:#fff;
+	color:#333;
+	border:0;
+	margin-top:10px;
+	font-size:20px;
+	border-radius:10px;
+}
+
+.text button:hover{
+	background-color:red;
+	color:white;
+	transform:scale(1.03);
+	cursor:pointer;
+	transition: all 0.2s ease;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/* Slideshow container END*/
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/*Cateringbar CSS Start*/
+.cateringbar{
+	width:100%;
+	background-color:black;
+	color:white;
+	padding:30px 0;
+	text-align:center;	
+}
+.cateringbar h1{
+	font-size:50px;
+}
+
+.cateringbar button{
+	padding:10px 30px;
+	background-color:#fff;
+	color:#333;
+	border:0;
+	margin-top:10px;
+	font-size:20px;
+	border-radius:10px;
+}
+
+.cateringbar button:hover{
+	background-color:red;
+	color:white;
+	transform:scale(1.03);
+	cursor:pointer;
+	transition: all 0.2s ease;
+}
+/*Cateringbar CSS Start*/
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/* Gallery CSS Start*/
+.gallery .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns that sits next to each other */
+.gallery .column {
+  flex: 25%;
+  max-width: 25%;
+}
+
+.gallery .column img {
+  vertical-align: middle;
+}
+
+.gallery .column img:hover{
+	transform:scale(1.07);
+	cursor:pointer;
+	transition: all 0.5s ease;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* Gallery CSS END*/
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/* Contact Section CSS Start */
+
+.contactsection{
+	width:100%;
+	display:flex;
+	margin-top:10px;
+}
+
+.newsletter{
+	width:50%;
+	text-align:center;
+	background-image:url('images/contactback.JPG');
+	color:white;
+	z-index:-1;
+}
+.newsletter form input[type=email]{
+	border:none;
+	outline:none;
+	height:30px;
+	margin:0px 20px;
+	background:transparent;
+	border:2px solid rgba(255,255,255,0.2);
+	border-radius:40px;
+	font-size:18px;
+	padding:0 0 0 20px;
+	color:#fff;
+}
+
+.newsletter form input::placeholder{
+	color:white;
+}
+
+.newsletter form input[type=button]{
+	padding:10px 30px;
+	background-color:#773;
+	color:#FFC300;
+	border:0;
+	margin-top:10px;
+}
+.newsletter form input[type=button]::hover{
+	background-color:red;
+	color:white;
+	transform:scale(1.03);
+	cursor:pointer;
+	transition: all 0.2s ease;
+}
+
+.newsletter form{
+	width:100%;
+	justify-content:center;
+	line-height: 1.8;
+	padding-top:20px;
+}
+.map{
+	width:50%;
+}
+.map iframe{
+	width:100%;
+}
+/* Contact Section CSS END */
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/* Footer CSS Start */
+
+.footer{
+	background-image:url('images/footerbgimage1.jpg');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	padding-bottom:20px;
+}
+.main{
+	display:flex;
+	width:100%;
+	margin-top:10px;
+	color:white;
+}
+
+.main .main1,.main2,.main3 li{
+	list-style-type:none;
+}
+.main h2{
+	text-align:center;
+}
+.main .main1{
+	padding:0 40px 30px 70px;
+	line-height: 2.5;
+}
+.main .main2{
+	padding:0 50px 30px 30px;
+	line-height: 2.5;
+}
+.main .main3{
+	padding:0 40px 30px 30px;
+	line-height: 2.5;
+}
+
+.logo{
+	text-align:center;
+	font-size:40px;
+}
+.logo a{
+	padding:0 15px;
+	transform:scale(1.08);
+	cursor:pointer;
+	transition: all 0.2s ease;
+}
+/* Footer CSS END */
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+

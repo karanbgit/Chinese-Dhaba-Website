@@ -1,0 +1,39 @@
+body {
+  	margin: 0;
+	padding:0;
+  	font-family: Arial, Helvetica, sans-serif;
+  	margin-bottom: 40px;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+/*Navigation CSS start*/
+.navbar{
+	display:flex;
+	justify-content:center;
+	position:relative;
+	align-items:center;
+}
+
+.navimage img{
+	height:85px;	
+	width:auto;
+	filter:drop-shadow(-1px 1px 1px #999696);
+}
+.privacy{
+	margin:40px 70px;
+}
+.privacy h2{
+	text-align:center;
+}
+.head{
+	margin-top:50px;
+}
+.contents{
+	margin:20px 10px;
+}
+.contents p{
+	line-height:1.4;
+	text-align:justify;
+}

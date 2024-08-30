@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="icon" type="image/x-icon" href="images/fevikon.png"></link>
+
+<title>Chinese Dhaba</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="styleSheet" href="aboutusstyle.css">
+
+</head>
+<body>
+<div class="container">
+	<div class="navbar">
+		<nav>	
+				<div  class="navimage">
+					<a href="home.html"><img src="logo.png" alt="Navigation imge" ></a>
+				</div>
+			<ul>
+				<li><a href="homemenu.html">MENU<a/></li>
+				<li><a href="catersdirectfromus.html">CATERING</a></li>
+				<li><a href="locationkolhapur.html">LOCATION</a></li>
+				<li><a href="franchise.html">FRANCHISE</a></li>
+
+				<div class="dropdown">
+			  		<button class="dropbtn" onclick="myFunction()">ORDER
+   				 		<i class="fa fa-caret-down"></i>
+  					</button>
+					<div class="dropdown-content" id="myDropdown">
+    						<a href="delivaryorder.html">Delivary</a>
+    						<a href="pickuporder.html">Pickup</a>
+   						<a href="cateringorder.html" target="_blank">Catering</a>
+  					</div>
+				</div>
+			</ul>
+
+		</nav>
+		
+	</div>
+			
+	<div class="herosection">
+
+	<!--About Section -->
+		<div class="about-us">
+			<div class="item1">
+				<div class="head">
+					<h1>CHINESE DHABA</h1>
+					<h3>Chinese food, Indian twist</h3>
+				</div>
+
+				<div class="content">
+				<h1>THE EXPERIENCE</h1>
+				<p>Fusion. Our cooking technique blends an array of Indian herbs and spices into traditional Chinese cuisine to create unique flavors. Dhaba vibes~ enjoy a distinctive dining experience - much like one that may be found at a Dhaba, or a countryside restaurant on the Indian subcontinent. Flavor-forward. The freshly ground herbs and spices add a tinge of Indian flavor to our Chinese menu. Delight your senses and gratify your appetite in a one-of-a-kind experience.</p>
+
+				<h1>THE TASTE</h1>
+				<p>Turn up the heat! Carefully selected ingredients prepared in your choice of Manchurian, Szechuan, chili, or garlic sauce present ardent, and sometimes, fiery propositions. Sweet tooth? Our homemade shahi falooda kulfi - a rich dessert prepared with kulfi ice cream dipped in rabri, drizzled with rose syrup, and sprinkled with vermicelli and nuts - adds a royally sweet touch to your visit. Made to order. We value the fresh preparation of food, and in turn, ensure the quality of the food that our customers have come to appreciate.</p>	
+
+				<h1>THE SPOT</h1>
+				<p>1, 2, 3, 4. A trip to any one of our four centrally located spots ensures a nostalgic escapade. Culture. The global mall, Patel plaza, Suwanee, and Duluth markets offer a variety of shopping and dining options coupled with a crowd who yearn to reminisce their roots. Aromatic. At all of our restaurants, every dish is freshly prepared to order, resulting in a consistently rewarding experience.</p>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+</body>
+</html>
